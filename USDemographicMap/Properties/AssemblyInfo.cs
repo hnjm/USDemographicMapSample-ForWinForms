@@ -4,7 +4,7 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("MapSuite Us Demographic Map")]
+[assembly: AssemblyTitle("Us Demographic Map")]
 [assembly: AssemblyDescription("ThinkGeo Map Suite Examples - US Demographic Map")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("ThinkGeo LLC.")]
