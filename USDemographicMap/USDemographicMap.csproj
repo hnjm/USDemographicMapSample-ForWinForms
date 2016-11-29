@@ -78,15 +78,15 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="GeoAPI, Version=1.7.4.0, Culture=neutral, PublicKeyToken=a1a0da7def465678, processorArchitecture=MSIL">
-      <HintPath>..\packages\MapSuiteDependency-GeoAPI.10.0.0.0\lib\net45\GeoAPI.dll</HintPath>
+      <HintPath>..\packages\MapSuiteDependency-GeoAPI.10.0.0\lib\net45\GeoAPI.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="NetTopologySuite, Version=1.14.0.0, Culture=neutral, PublicKeyToken=f580a05016ebada1, processorArchitecture=MSIL">
-      <HintPath>..\packages\MapSuiteDependency-NetTopologySuite.10.0.0.0\lib\net45\NetTopologySuite.dll</HintPath>
+      <HintPath>..\packages\MapSuiteDependency-NetTopologySuite.10.0.0\lib\net45\NetTopologySuite.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="PowerCollections, Version=1.0.0.0, Culture=neutral, PublicKeyToken=2573bf8a1bdddcd5, processorArchitecture=MSIL">
-      <HintPath>..\packages\MapSuiteDependency-NetTopologySuite.10.0.0.0\lib\net45\PowerCollections.dll</HintPath>
+      <HintPath>..\packages\MapSuiteDependency-NetTopologySuite.10.0.0\lib\net45\PowerCollections.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
@@ -99,35 +99,35 @@
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="ThinkGeo.MapSuite, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\ThinkGeo.MapSuite.10.0.323.2\lib\net40\ThinkGeo.MapSuite.dll</HintPath>
+      <HintPath>..\packages\ThinkGeo.MapSuite.10.0.333.3\lib\net40\ThinkGeo.MapSuite.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="ThinkGeo.MapSuite.Layers.Adornments, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\ThinkGeo.MapSuite.Layers.Adornments.10.0.323.2\lib\net40\ThinkGeo.MapSuite.Layers.Adornments.dll</HintPath>
+      <HintPath>..\packages\ThinkGeo.MapSuite.Layers.Adornments.10.0.333.3\lib\net40\ThinkGeo.MapSuite.Layers.Adornments.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="ThinkGeo.MapSuite.Layers.ShapeFile, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\ThinkGeo.MapSuite.Layers.ShapeFile.10.0.323.2\lib\net40\ThinkGeo.MapSuite.Layers.ShapeFile.dll</HintPath>
+      <HintPath>..\packages\ThinkGeo.MapSuite.Layers.ShapeFile.10.0.333.3\lib\net40\ThinkGeo.MapSuite.Layers.ShapeFile.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="ThinkGeo.MapSuite.Styles.ClassBreak, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\ThinkGeo.MapSuite.Styles.ClassBreak.10.0.323.2\lib\net40\ThinkGeo.MapSuite.Styles.ClassBreak.dll</HintPath>
+      <HintPath>..\packages\ThinkGeo.MapSuite.Styles.ClassBreak.10.0.333.3\lib\net40\ThinkGeo.MapSuite.Styles.ClassBreak.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="ThinkGeo.MapSuite.Styles.DotDensity, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\ThinkGeo.MapSuite.Styles.DotDensity.10.0.323.2\lib\net40\ThinkGeo.MapSuite.Styles.DotDensity.dll</HintPath>
+      <HintPath>..\packages\ThinkGeo.MapSuite.Styles.DotDensity.10.0.333.3\lib\net40\ThinkGeo.MapSuite.Styles.DotDensity.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="ThinkGeo.MapSuite.Styles.ZedGraph, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\ThinkGeo.MapSuite.Styles.ZedGraph.10.0.323.2\lib\net40\ThinkGeo.MapSuite.Styles.ZedGraph.dll</HintPath>
+      <HintPath>..\packages\ThinkGeo.MapSuite.Styles.ZedGraph.10.0.333.3\lib\net40\ThinkGeo.MapSuite.Styles.ZedGraph.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="ThinkGeo.MapSuite.WinForms, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\MapSuiteDesktopForWinForms-BareBone.10.0.323.2\lib\net40\ThinkGeo.MapSuite.WinForms.dll</HintPath>
+      <HintPath>..\packages\MapSuiteDesktopForWinForms-BareBone.10.0.333.3\lib\net40\ThinkGeo.MapSuite.WinForms.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="ZedGraph, Version=5.1.7.430, Culture=neutral, PublicKeyToken=02a83cbd123fcd60, processorArchitecture=MSIL">
-      <HintPath>..\packages\MapSuiteDependency-ZedGraph.10.0.0.0\lib\net35-Client\ZedGraph.dll</HintPath>
+      <HintPath>..\packages\MapSuiteDependency-ZedGraph.10.0.0\lib\net35-Client\ZedGraph.dll</HintPath>
       <Private>True</Private>
     </Reference>
   </ItemGroup>

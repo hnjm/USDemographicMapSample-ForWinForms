@@ -42,7 +42,7 @@ namespace ThinkGeo.MapSuite.USDemographicMap
             customFeatureLayer = new ShapeFileFeatureLayer();
             censusStateFeatureLayer = new ShapeFileFeatureLayer(@"../../App_Data/usStatesCensus2010.shp");
             censusStateFeatureLayer.ZoomLevelSet.ZoomLevel01.ApplyUntilZoomLevel = ApplyUntilZoomLevel.Level20;
-            censusStateFeatureLayer.DrawingMarginPercentage = 100;
+            censusStateFeatureLayer.DrawingMarginInPixel = 100;
 
             currentFeatureLayer = censusStateFeatureLayer;
 
@@ -506,7 +506,7 @@ namespace ThinkGeo.MapSuite.USDemographicMap
         {
             customFeatureLayer = e.ShapeFileFeatureLayer;
             customFeatureLayer.ZoomLevelSet.ZoomLevel01.ApplyUntilZoomLevel = ApplyUntilZoomLevel.Level20;
-            customFeatureLayer.DrawingMarginPercentage = 100;
+            customFeatureLayer.DrawingMarginInPixel = 100;
             currentFeatureLayer = customFeatureLayer;
             currentStyleBuilder.SelectedColumns.Clear();
             map.CurrentExtent = e.ShapeFileFeatureLayer.GetBoundingBox();
