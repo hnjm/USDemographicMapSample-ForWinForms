@@ -1,4 +1,4 @@
-# USDemographicMapSample-ForWinForms
+# US Demographic Map Sample Template for WinForms
 
 ### Description
 
