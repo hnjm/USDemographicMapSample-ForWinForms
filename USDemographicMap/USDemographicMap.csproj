@@ -105,6 +105,10 @@
     <Reference Include="ThinkGeo.MapSuite">
       <HintPath>..\packages\ThinkGeo.MapSuite.10.0.0\lib\net45\ThinkGeo.MapSuite.dll</HintPath>
     </Reference>
+    <Reference Include="ThinkGeo.MapSuite.Styles.WorldStreets, Version=10.0.0.0, Culture=neutral, PublicKeyToken=0828af5241fb4207, processorArchitecture=MSIL">
+      <HintPath>..\packages\ThinkGeo.MapSuite.Styles.WorldStreets.10.0.0\lib\net45\ThinkGeo.MapSuite.Styles.WorldStreets.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="ThinkGeo.MapSuite.WinForms">
       <HintPath>..\packages\MapSuiteDesktopForWinForms-BareBone.10.0.0\lib\net45\ThinkGeo.MapSuite.WinForms.dll</HintPath>
     </Reference>

@@ -4,7 +4,6 @@ using ThinkGeo.MapSuite.Drawing;
 using ThinkGeo.MapSuite.Layers;
 using ThinkGeo.MapSuite.Shapes;
 using ThinkGeo.MapSuite.Styles;
-using ThinkGeo.MapSuite.WinForms;
 
 namespace ThinkGeo.MapSuite.USDemographicMap
 {

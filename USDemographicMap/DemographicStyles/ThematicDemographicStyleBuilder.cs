@@ -80,7 +80,8 @@ namespace ThinkGeo.MapSuite.USDemographicMap
                 classBreakStyle.ClassBreaks.Add(classBreak);
             }
 
-            return new Collection<Style>() { classBreakStyle, TextStyles.Country1("NAME") };
+            //return new Collection<Style>() { classBreakStyle, TextStyles.Country1("NAME") };
+            return new Collection<Style>() { classBreakStyle, TextStyles.CreateSimpleTextStyle("NAME", "Arial", 8, DrawingFontStyles.Bold, GeoColor.StandardColors.Black, GeoColor.StandardColors.White, 3) };
         }
 
         private double[] GetClusterClassBreaks(double[] values, int count)
