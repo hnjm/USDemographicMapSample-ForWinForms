@@ -1,4 +1,4 @@
-# US Demographic Map Sample
+# US Demographic Map Sample for WinForms
 
 ### Description
 
