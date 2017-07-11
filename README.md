@@ -14,9 +14,32 @@ This sample makes use of the following NuGet Packages
 [MapSuite 10.0.0](https://www.nuget.org/packages?q=ThinkGeo)
 
 ### About the Code
+```csharp
+internal class CustomDotDensityStyle : DotDensityStyle
+{
+    protected override void DrawSampleCore(GeoCanvas canvas, DrawingRectangleF drawingExtent)
+    {
+        base.DrawSampleCore(canvas, drawingExtent);
+        PointShape upperLeftPoint = ExtentHelper.ToWorldCoordinate(canvas.CurrentWorldExtent, drawingExtent.CenterX - drawingExtent.Width / 2, drawingExtent.CenterY - drawingExtent.Height / 2, canvas.Width, canvas.Height);
+        PointShape lowerRightPoint = ExtentHelper.ToWorldCoordinate(canvas.CurrentWorldExtent, drawingExtent.CenterX + drawingExtent.Width / 2, drawingExtent.CenterY + drawingExtent.Height / 2, canvas.Width, canvas.Height);
+        RectangleShape rectangle = new RectangleShape(upperLeftPoint, lowerRightPoint);
+        rectangle.ScaleDown(10);
 
-Working...
-
+        // Here draw the points on Legend Image
+        Random random = new Random(DateTime.Now.Millisecond);
+        Collection<BaseShape> drawingPoints = new Collection<BaseShape>();
+        for (int i = 0; i < DrawingPointsNumber; i++)
+        {
+            double x = rectangle.LowerLeftPoint.X + random.NextDouble() * (rectangle.Width);
+            double y = rectangle.LowerLeftPoint.Y + random.NextDouble() * (rectangle.Height);
+            drawingPoints.Add(new PointShape(x, y));
+        }
+        TextStyle textStyle = new TextStyle(DrawingPointsNumber.ToString(), new GeoFont("Arial", 20, DrawingFontStyles.Bold), new GeoSolidBrush(GeoColor.FromArgb(180, GeoColor.FromHtml("#d3d3d3"))));
+        textStyle.DrawSample(canvas, drawingExtent);
+        CustomPointStyle.Draw(drawingPoints, canvas, new Collection<SimpleCandidate>(), new Collection<SimpleCandidate>());
+    }
+}
+```
 ### Getting Help
 
 [Map Suite Desktop for Winforms Wiki Resources](http://wiki.thinkgeo.com/wiki/map_suite_desktop_for_winforms)
@@ -30,7 +53,13 @@ Working...
 ### Key APIs
 This example makes use of the following APIs:
 
-Working...
+- [ThinkGeo.MapSuite.Shapes.DrawingRectangleF](http://wiki.thinkgeo.com/wiki/api/thinkgeo.mapsuite.shapes.drawingrectanglef)
+- [ThinkGeo.MapSuite.Drawing.GeoCanvas](http://wiki.thinkgeo.com/wiki/api/thinkgeo.mapsuite.drawing.geocanvas)
+- [ThinkGeo.MapSuite.Shapes.PointShape](http://wiki.thinkgeo.com/wiki/api/thinkgeo.mapsuite.shapes.pointshape)
+- [ThinkGeo.MapSuite.Shapes.ExtentHelper](http://wiki.thinkgeo.com/wiki/api/thinkgeo.mapsuite.shapes.extenthelper)
+- [ThinkGeo.MapSuite.Shapes.RectangleShape](http://wiki.thinkgeo.com/wiki/api/thinkgeo.mapsuite.shapes.rectangleshape)
+- [ThinkGeo.MapSuite.Shapes.BaseShape](http://wiki.thinkgeo.com/wiki/api/thinkgeo.mapsuite.shapes.baseshape)
+- [ThinkGeo.MapSuite.Styles.TextStyle](http://wiki.thinkgeo.com/wiki/api/thinkgeo.mapsuite.styles.textstyle)
 
 ### About Map Suite
 Map Suite is a set of powerful development components and services for the .Net Framework.
