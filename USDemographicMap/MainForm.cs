@@ -30,13 +30,13 @@ namespace ThinkGeo.MapSuite.USDemographicMap
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-            map.CurrentExtent = new RectangleShape(-117.31572753787, 50.2174681480974, -77.5501025378704, 25.8649290855974);
-            //map.ThreadingMode = MapThreadingMode.Multithreaded;
-            // Add WorldMapKit Overlay
-            WorldMapKitWmsDesktopOverlay desktopOverlay = new WorldMapKitWmsDesktopOverlay();
-            //desktopOverlay.TileCache = new FileBitmapTileCache(@"c:\temp\cache");
-            //desktopOverlay.LayerType = WorldMapKitLayerType.OSMWorldMapKitLayer;
-            map.Overlays.Add(desktopOverlay);
+            map.MapUnit = GeographyUnit.Meter;
+            map.ZoomLevelSet = ThinkGeoCloudMapsOverlay.GetZoomLevelSet();
+            map.CurrentExtent = new RectangleShape(-13059527, 6484023, -8632838, 2982361);
+
+            // Add ThinkGeoCloudMapsOverlay as basemap
+            ThinkGeoCloudMapsOverlay thinkGeoCloudMapsOverlay = new ThinkGeoCloudMapsOverlay();
+            map.Overlays.Add(thinkGeoCloudMapsOverlay);
 
             // Add Demographic Layer
             customFeatureLayer = new ShapeFileFeatureLayer();
