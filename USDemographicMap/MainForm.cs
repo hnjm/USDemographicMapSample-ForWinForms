@@ -31,11 +31,15 @@ namespace ThinkGeo.MapSuite.USDemographicMap
         private void MainForm_Load(object sender, EventArgs e)
         {
             map.MapUnit = GeographyUnit.Meter;
-            map.ZoomLevelSet = ThinkGeoCloudMapsOverlay.GetZoomLevelSet();
+            map.ZoomLevelSet = new ThinkGeoCloudMapsZoomLevelSet();
             map.CurrentExtent = new RectangleShape(-13059527, 6484023, -8632838, 2982361);
 
-            // Add ThinkGeoCloudMapsOverlay as basemap
-            ThinkGeoCloudMapsOverlay thinkGeoCloudMapsOverlay = new ThinkGeoCloudMapsOverlay();
+            /*===========================================
+               Backgrounds for this sample are powered by ThinkGeo Cloud Maps and require
+               a Client ID and Secret. These were sent to you via email when you signed up
+               with ThinkGeo, or you can register now at https://cloud.thinkgeo.com.
+            ===========================================*/
+            ThinkGeoCloudRasterMapsOverlay thinkGeoCloudMapsOverlay = new ThinkGeoCloudRasterMapsOverlay();
             map.Overlays.Add(thinkGeoCloudMapsOverlay);
 
             // Add Demographic Layer
