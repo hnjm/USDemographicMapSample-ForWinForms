@@ -1,4 +1,10 @@
-﻿using System;
+﻿/*===========================================
+    Backgrounds for this sample are powered by ThinkGeo Cloud Maps and require
+    a Client ID and Secret. These were sent to you via email when you signed up
+    with ThinkGeo, or you can register now at https://cloud.thinkgeo.com.
+===========================================*/
+
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Drawing;
@@ -34,12 +40,8 @@ namespace ThinkGeo.MapSuite.USDemographicMap
             map.ZoomLevelSet = new ThinkGeoCloudMapsZoomLevelSet();
             map.CurrentExtent = new RectangleShape(-13059527, 6484023, -8632838, 2982361);
 
-            /*===========================================
-               Backgrounds for this sample are powered by ThinkGeo Cloud Maps and require
-               a Client ID and Secret. These were sent to you via email when you signed up
-               with ThinkGeo, or you can register now at https://cloud.thinkgeo.com.
-            ===========================================*/
-            ThinkGeoCloudRasterMapsOverlay thinkGeoCloudMapsOverlay = new ThinkGeoCloudRasterMapsOverlay();
+            // Please input your ThinkGeo Cloud Client ID / Client Secret to enable the background map. 
+            ThinkGeoCloudRasterMapsOverlay thinkGeoCloudMapsOverlay = new ThinkGeoCloudRasterMapsOverlay("ThinkGeo Cloud Client ID", "ThinkGeo Cloud Client Secret");
             map.Overlays.Add(thinkGeoCloudMapsOverlay);
 
             // Add Demographic Layer
